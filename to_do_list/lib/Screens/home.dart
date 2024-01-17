@@ -9,11 +9,21 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: tLBlue,
-        title: Row(children: [
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
           Icon(
             Icons.menu,
             color: tBlack,
             size: 30,
+            ),
+            Container(
+              height:40,
+              width: 40,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Image.asset('assets\images\avatar.jpg')
+              ),
             )
           ],),
       ),
